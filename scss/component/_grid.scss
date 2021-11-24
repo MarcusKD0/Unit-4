@@ -2,7 +2,7 @@
 .container {
     padding: 0 10px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $desktop) {
         max-width: 1400px;
         display: block;
         margin-left: auto;
@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     padding: 1em 10px;
-    @media (min-width: 768px) {
+    @media (min-width:$desktop) {
       flex-direction: row;
   }
 }
@@ -24,7 +24,7 @@
     min-height: 25px;
     padding: 10px;
     border-radius: 5px;
-    @media (min-width: 768px) {
+    @media (min-width: $desktop) {
       display: flex;
       justify-content: center;
       margin-top: 0;
@@ -33,7 +33,7 @@
   }
   
   .theme.col-1 {
-    background-color: #927bc1;
+    background-color: $info-color;
   }
   
   .theme.col-2 {
@@ -73,7 +73,7 @@
   }
   
   .theme.col-11 {
-    background-color: #51ddfc;
+    background-color: $secondar-color;
   }
   
   .theme.col-12 {
@@ -83,7 +83,7 @@
   .card {
     flex-basis: 100%;
   }
-  @media (min-width: 768px) {
+  @media (min-width: $desktop) {
 
 
     [class^=col] + [class^=col] {

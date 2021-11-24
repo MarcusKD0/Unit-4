@@ -2,36 +2,52 @@
 .btn {
     margin-top: 15px;
     width: 100%;
-    color: #fff;
+    color: $font-secondary;
     border: none;
     padding: 10px 0;
     text-transform: uppercase;
     border-radius: 5px;
-    @media (min-width: 768px) {
+    transition: 1.5s ease-out;
+    @media (min-width: $desktop) {
       padding: 10px 30px;
   }
 }
   .default {
-    background-color: #51ddfc;
+    background-color: $secondar-color;
+    &:hover{
+      background-color: lighten($color: $secondar-color, $amount: 15%);
   }
-  
+}
+
   .error {
-    background-color: #e4757a;
+    background-color: $error-color;
+    &:hover{
+      background-color: lighten($color: $error-color, $amount: 15%);
+    }
   }
   
   .info {
-    background-color: #927bc1;
+    background-color: $info-color;
+    &:hover{
+      background-color: lighten($color: $info-color, $amount: 15%);
+    }
   }
   
   .success {
-    background-color: #63cc82;
+    background-color: $success-color;
+    &:hover{
+      background-color: lighten($color:$success-color, $amount: 15%);
+    }
   }
   
   .warning {
-    background-color: #fd7856;
+    background-color: $warning-color;
+    &:hover{
+      background-color: lighten($color:$warning-color, $amount: 15%);
+    }
   }
   
-  @media (min-width: 768px) {
+  @media (min-width: $desktop) {
   .btn + .btn {
     margin-left: 10px;
   }
